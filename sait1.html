@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+    "use strict";
+    const wrongMessage='Incorrect input';
+    const first= prompt('Input first number','');
+    const isFirstANumber =!isNaN(first) && !isNaN(parseFloat(first));
+    console.log("isFirstANumber=", isFirstANumber);
+    if (isFirstANumber===true) {
+        const second = prompt('Input second number','');
+        const isSecondANumber = !isNaN(second) && !isNaN(parseFloat(second ));
+        console.log("isSecondANumber=", isSecondANumber);  
+        if (isSecondANumber===true) {
+            if (isFirstANumber && isSecondANumber) {
+                console.log((+first).toString(+second));
+            }
+        } else {
+            console.log(wrongMessage); 
+        }
+    } else {
+        console.log(wrongMessage);
+    }
+    
+</script>
+
+</html>
