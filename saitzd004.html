@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+    "use strict";
+    let wro = 'Incorrect input'
+    let firstNumber= prompt('Input first number','');
+    let secondNumber= prompt('Input second number','');
+        if ((((+firstNumber - 1)**2)>0) && (+firstNumber>0)){
+        //alert('step 1 +');
+        if ((((+secondNumber - 1)**2)>0) && (+firstNumber>0)){
+            //alert('step 2 +');
+            let ff = (+firstNumber+ +secondNumber);
+            let dd = ((+firstNumber)/(+secondNumber));
+            alert(`Sum 2 numbers = ${ff}`);
+            alert(`Product of 2 numbers = ${dd}`);
+        } else {
+            alert(wro);
+        }
+    } else {
+        alert(wro);
+    }
+</script>
+
+</html>
